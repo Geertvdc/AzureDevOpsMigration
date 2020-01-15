@@ -3,8 +3,8 @@ $BackupRoot = "F:\<<path to scripts\\Migration\WorkitemBackup\"
 $CollectionUrl = New-Object System.Uri("http://<<your TFS instance>>:8080/tfs/<<Collection>>/")
 
 ## Paths
-$WitAdmin = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\WitAdmin.exe"
-$TeamExplorerPath = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\"
+$WitAdmin = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\WitAdmin.exe"
+$TeamExplorerPath = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\"
 
 Start-Transcript .\Logs\03c-Import-Workitems.log
 

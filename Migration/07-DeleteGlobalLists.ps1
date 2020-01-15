@@ -1,7 +1,7 @@
 $Collection = "http://<<your TFS instance>>:8080/tfs/<<Collection>>/"
 
 
-$WITAdminPath = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\WitAdmin.exe"
+$WITAdminPath = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\WitAdmin.exe"
 $globalListFilePath = ".\WorkitemBackup\globallist.xml"
 
 Start-Transcript -Path (".\Logs\{0}.log" -f $MyInvocation.MyCommand.Name)

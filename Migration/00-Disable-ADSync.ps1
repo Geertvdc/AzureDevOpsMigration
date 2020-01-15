@@ -7,7 +7,7 @@ $CollectionURL = "http://<<your TFS instance>>:8080/tfs/"
 
 Start-Transcript -Path (".\Logs\{0}.log" -f $MyInvocation.MyCommand.Name)
 
-$assemblyPath = "C:\Program Files\Microsoft Team Foundation Server 2018\Application Tier\TFSJobAgent"
+$assemblyPath = "C:\Program Files\Azure DevOps Server 2019\Application Tier\TFSJobAgent"
 Add-Type -Path "$assemblyPath\Microsoft.TeamFoundation.Client.dll"
 Add-Type -Path "$assemblyPath\Microsoft.TeamFoundation.Common.dll"
 Add-Type -Path "$assemblyPath\Microsoft.TeamFoundation.WorkItemTracking.Client.dll"

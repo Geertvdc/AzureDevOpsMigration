@@ -5,8 +5,8 @@ $CollectionUrl = New-Object System.Uri("http://<<your TFS instance>>:8080/tfs/<<
 Start-Transcript -Path (".\Logs\{0}.log" -f $MyInvocation.MyCommand.Name)
 
 ## Paths
-$WitAdmin = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\WitAdmin.exe"
-$TeamExplorerPath = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\"
+$WitAdmin = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\WitAdmin.exe"
+$TeamExplorerPath = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\"
 
 
 Join-Path $TeamExplorerPath "Microsoft.TeamFoundation.Client.dll" | % {Add-Type -path $_}
